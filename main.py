@@ -27,12 +27,13 @@ def get_character_list(character_count):
     return character_list
 
 def make_report(path, character_list, word_count):
-    print(f"--- Begin report of {path}")
+    print(f"--- Begin report of {path} ---")
     print(f"{word_count} words found in the document\n")
     for character in character_list:
         char = character["char"]
         num = character["num"]
         print(f"The '{char}' character was found {num} times")
+    print("--- End report ---")
 
 
 
